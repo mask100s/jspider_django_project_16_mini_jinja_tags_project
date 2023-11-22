@@ -1,0 +1,80 @@
+*
+{
+  margin: 0px;
+}
+div
+{
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 7px rgb(26, 24, 24);
+  overflow: hidden;
+  position: relative;
+
+}
+div:hover
+{
+  cursor: pointer;
+}
+div>img
+{
+  width: inherit;
+  height: inherit;
+  filter: grayscale(100%);
+  border-radius: 10px;
+  transition: all 1s linear 3s;
+}
+div:hover>img
+{ 
+  filter: grayscale(0%);
+  transform: scale(2.0,2.0);
+}
+
+ div > #curtain
+{
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+
+  transform: translateY(0%);
+  transition: all 4s linear 0s;
+}
+div:hover > #curtain
+{
+  transform: translateY(-100%);
+}
+div>#left
+{
+  background-image: linear-gradient(to top right,black,rgb(182, 15, 15));
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  width: 50%;
+  transform-origin: left;
+  transition: all 1s linear 0s;
+}
+div:hover>#left
+{
+  transform:perspective(200px) rotateY(90deg)
+}
+
+div>#right
+{
+  background-image: linear-gradient(to top left,black,rgb(182, 15, 15));
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin: 0px;
+  width: 50%;
+  transform-origin: right;
+  transition: all 1s linear 0s;
+}
+div:hover>#right
+{
+  transform:perspective(200px) rotateY(-90deg)
+}

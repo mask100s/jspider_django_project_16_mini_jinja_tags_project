@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+
+    {% for ch in string %}
+        {{ch}} 
+    {% endfor %}
+
+    <h3>
+      <a href="{% url 'connect1:page3' %}">Go back to page 3.</a>
+      <br>
+      <a href="{% url 'page5' %}">Go to page 5.</a>
+    </h3>
+  </center>
+</body>
+</html>

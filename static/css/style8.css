@@ -1,0 +1,23 @@
+body
+{
+  text-align: center;
+}
+img{
+  width: 50px;
+}
+table
+{
+  border-collapse: collapse ;
+  margin: 50px auto;
+}
+th,td
+{
+  border: rgb(4, 91, 112) 2px solid;
+  text-align: center;
+  padding: 5px;
+}
+thead
+{
+  background-color: rgb(26, 130, 156);
+  color: aliceblue;
+}

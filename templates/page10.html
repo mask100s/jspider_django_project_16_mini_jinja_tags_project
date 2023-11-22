@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style10.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <img src="{% static 'images/picture_windows.jpg' %}" alt="image not found">
+    <div id="curtain"></div>
+    <div id="left"></div> 
+    <div id="right"></div>
+  </div>
+  <center>
+    <a href="{% url 'connect2:page9' %}">Go back to page 9.</a>
+    <br>
+    <a href="{% url 'connect1:page2' %}">Go to page 2.</a>
+  </center>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body
+{
+  margin: 0px;
+}
+header,footer
+{
+  background-image: linear-gradient(to bottom,rgb(36, 102, 202),black);
+  padding: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+header>h1
+{
+  padding-left: 20px;
+
+}
+
+
+nav
+{
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+  
+}
+nav>a
+{
+  color: blue;
+  text-decoration: none;
+  margin: 20px;
+  text-transform: uppercase;
+}
+nav>a:hover
+{
+  text-decoration: underline;
+}
+
+
+
+
+aside
+{
+  background-image: linear-gradient(to right,rgb(36, 102, 202),rgb(5, 35, 59));
+  width: 200px;
+  height: 476px;
+  text-align: center;
+  float: left;
+}
+aside>a
+{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+aside>a:hover
+{
+  text-decoration: underline;
+}
+
+
+
+
+section
+{
+  margin-left: 201px;
+  color: white;
+  padding: 18px;
+  background-image: linear-gradient(to right,black,rgb(36, 102, 202));
+  
+}
+section>h1
+{
+  text-transform: capitalize;
+}
+section>article
+{
+  padding: 8px;
+  border: 2px solid white;
+}
+section>article>h2
+{
+  text-transform: capitalize;
+}
+section>article>button
+{
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+section>article>button:hover
+{
+  box-shadow: 0 0 5px rgb(228, 220, 220);
+}
+
+
+footer
+{
+  text-align: center;
+  background-image: linear-gradient(to top,rgb(36, 102, 202),rgb(5, 35, 59));
+}
+
+footer>small>center>a
+{
+  color: white;
+}

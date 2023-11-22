@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <h1>This page is for conditional jinja operational tag.</h1>
+
+    {% if a > b %}
+        {{a}} is greatest.
+    {% else %}
+        {{b}} is greatest.
+    {% endif %}
+
+    <h3>
+      <a href="{% url 'connect1:page2' %}">Go back to page 2.</a>
+      <br>
+      <a href="{% url 'connect1:page4' %}">Go to page 4.</a>
+    </h3>
+  </center>
+</body>
+</html>

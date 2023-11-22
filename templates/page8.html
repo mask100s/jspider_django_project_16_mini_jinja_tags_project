@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style8.css' %}">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Employee Details:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Designetion</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DT_1</td>
+        <td>Spancer</td>
+        <td>22</td>
+        <td>Developer</td>
+        <td><img src="{% static 'images/man1.png' %}" alt=""></td>
+      </tr>
+            <tr>
+        <td>DT_2</td>
+        <td>Mark</td>
+        <td>22</td>
+        <td>Intern</td>
+        <td><img src="{% static 'images/man2.png' %}" alt=""></td>
+      </tr>
+      <tr>
+        <td>DT_3</td>
+        <td>Jacob</td>
+        <td>21</td>
+        <td>Hr</td>
+        <td><img src="{% static 'images/man3.png' %}" alt=""></td>
+      </tr>
+      <tr>
+        <td rowspan=2>DT_4</td>
+        <td>Clay</td>
+        <td>26</td>
+        <td>Manager</td>
+        <td><img src="{% static 'images/man4.png' %}" alt=""></td>
+      </tr>
+      <tr>
+        
+        <td>tom</td>
+        <td>24</td>
+        <td>adime</td>
+        <td><img src="{% static 'images/man5.png' %}" alt=""></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <center>
+    <a href="{% url 'connect2:page7' %}">Go back to page 7.</a>
+    <br>
+    <a href="{% url 'connect2:page9' %}">Go to page 9.</a>
+  </center>
+</body>
+</html>
